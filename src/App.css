@@ -1,0 +1,264 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.ovrDrft{
+  color:red;
+}
+
+#navBar a:visited {
+  color:white;
+}
+#navBar a{
+  color:white;
+}
+#navBar {
+  color:white;
+  text-align: center;
+  position: relative;
+  z-index:999;
+}
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  padding: 0px;
+  margin: 5vh 0;
+  background: linear-gradient(to right, #5433FF, #20BDFF, #A5FECB);
+  font-family:'BebasNeue-Regular';
+}
+
+#gradient
+{
+ width: 100%;
+ height: 800px;
+ padding: 0px;
+ margin: 0px;
+}
+
+input {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.numeric-theme {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.gridmain{
+  justify-content: center;
+}
+
+.cardBtn{
+  color:white;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin:auto;
+  display:block;
+  font-size:12em;
+  display: flex;
+  border-color: transparent;
+  cursor:pointer;
+
+}
+
+@keyframes slideUp {
+	0%{
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	100% {
+		-webkit-transform: translateY(-20px);
+		-ms-transform:     translateY(-20px);
+		transform:         translateY(-20px)
+	}
+
+}
+
+.cardDiv{
+  margin:auto;
+  z-index:-1;
+  width:50%!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+}
+
+.cardDiv:hover{
+  animation-fill-mode: forwards;  
+  animation-name: slideUp;
+  -moz-animation-name: slideUp;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.cardDiv:focus, button.cardBtn:focus{
+    outline: none;
+}
+.cardDiv button.cardBtn, button.cardBtn:active{
+  background-color: transparent;
+  transition: color 0s;
+}
+
+.wraptb{
+  margin:auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color:white;
+  width:50%;
+  height:200px;
+}
+.behind{
+  margin:auto;
+  font-size: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color:white;
+  height:200px;
+  background:inherit;
+  position: relative;
+  z-index:999;
+  
+}
+.cardSlot{
+  margin:auto;
+  display: flex;
+  top: 3%;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  width:200px;
+  height:20px;
+  background:inherit;
+  border:5px solid white;
+  border-bottom: none;
+  border-radius:10px;
+}
+
+.invalidinput{
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.numeric-theme + .simple-keyboard-preview {
+  max-width: 320px;
+}
+
+.simple-keyboard.hg-theme-default.numeric-theme
+  .hg-button.hg-standardBtn.hg-button-at {
+  max-width: none;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row .clearBtn{
+  background-color: #c7b909;
+}
+.row .clearBtn:hover{
+  color: #c7b909;
+}
+.row .confirmBtn{
+  background-color: forestgreen;
+}
+.row .confirmBtn:hover{
+  color: forestgreen;
+}
+
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src: url('./css/fonts/BebasNeue-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./css/fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./css/fonts/BebasNeue-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./css/fonts/BebasNeue-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./css/fonts/BebasNeue-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Roboto-Light-webfont';
+  src: url('./css/fonts/Roboto-Light-webfont.eot');
+  src: url('./css/fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype')
+       url('./css/fonts/Roboto-Light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./css/fonts/Roboto-Light-webfont.woff') format('woff'),
+       url('./css/fonts/Roboto-Light-webfont.ttf') format('truetype'),
+       url('./css/fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}

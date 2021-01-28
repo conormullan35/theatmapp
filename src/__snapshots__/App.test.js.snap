@@ -1,0 +1,405 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots App snapshot 1`] = `
+<main>
+  <WithStyles(ForwardRef(Container))
+    maxWidth="sm"
+  >
+    <Switch>
+      <Route
+        exact={true}
+        path="/"
+      >
+        <Redirect
+          component={[Function]}
+          to="/splashscreen"
+        />
+      </Route>
+      <Route
+        component={[Function]}
+        path="/splashscreen"
+      />
+      <Route
+        component={[Function]}
+        path="/dashboard"
+      />
+      <Route
+        component={[Function]}
+        path="/pincode"
+      />
+    </Switch>
+  </WithStyles(ForwardRef(Container))>
+</main>
+`;
+
+exports[`snapshots Calculations snapshots 1`] = `""`;
+
+exports[`snapshots Dashboard snapshots 1`] = `
+<Fragment>
+  <h2
+    className="name"
+  >
+    Welcome Michael
+  </h2>
+  <div
+    id="dashboardWrap"
+  >
+    <div
+      className="topWrap"
+    >
+      <div
+        className="three"
+      >
+        <div
+          className="ca first"
+        >
+          <p>
+            Balance
+          </p>
+          <p
+            className="snd white"
+          >
+            £
+            220
+            .00
+          </p>
+        </div>
+        <div
+          className="ca last"
+        >
+          <p>
+            Overdraft Limit
+          </p>
+          <p
+            className="snd "
+          >
+            £100.00
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="twoCards"
+    />
+    <form
+      id="formid"
+      onSubmit={[Function]}
+    >
+      <input
+        className="inputAmount"
+        disabled={false}
+        name="total"
+        onChange={[Function]}
+        readOnly={true}
+        style={
+          Object {
+            "fontFamily": "BebasNeue-Regular",
+          }
+        }
+        type="numeric"
+        value=".00"
+      />
+    </form>
+    <div
+      style={
+        Object {
+          "backgroundColor": "transparent",
+        }
+      }
+    >
+      <NumPad
+        disp={
+          Object {
+            "10": 0,
+            "20": 0,
+            "5": 0,
+            "total": "",
+          }
+        }
+        leftAction={[Function]}
+        leftName={<Memo />}
+        open={false}
+        rightAction={[Function]}
+        rightName={
+          <ConfirmationDialog
+            balance={220}
+            isDisabled={[Function]}
+            isLoading={false}
+            limits={[Function]}
+            open={false}
+            setBalance={[Function]}
+            setIsLoading={[Function]}
+            setOpen={[Function]}
+            setShowDialog={[Function]}
+            setVisible={[Function]}
+            showDialog={false}
+            value=""
+          >
+            <Memo />
+          </ConfirmationDialog>
+        }
+        setDisp={[Function]}
+        setOpen={[Function]}
+        setShowDialog={[Function]}
+        showDialog={false}
+      />
+      <div
+        className="row"
+      >
+        <button
+          className="withdrBtn cancel"
+          onClick={[Function]}
+        >
+          CANCEL TRANSACTION
+        </button>
+      </div>
+    </div>
+    <div
+      className="bN"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`snapshots Dialog snapshot 1`] = `<Fragment />`;
+
+exports[`snapshots Input snapshot 1`] = `
+<div
+  className="input"
+>
+  <div
+    className="circle"
+    id="one"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+      }
+    }
+  />
+  <div
+    className="circle"
+    id="two"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+      }
+    }
+  />
+  <div
+    className="circle"
+    id="three"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+      }
+    }
+  />
+  <div
+    className="circle"
+    id="four"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`snapshots NumPad snapshots 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="calc-wrapper"
+  >
+    <div
+      className="row"
+    >
+      <button
+        className="button-wrapper btnsvn"
+        onClick={[Function]}
+      >
+        7
+      </button>
+      <button
+        className="button-wrapper btnegt"
+        onClick={[Function]}
+      >
+        8
+      </button>
+      <button
+        className="button-wrapper btnnne"
+        onClick={[Function]}
+      >
+        9
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="button-wrapper btnfr"
+        onClick={[Function]}
+      >
+        4
+      </button>
+      <button
+        className="button-wrapper btnfv"
+        onClick={[Function]}
+      >
+        5
+      </button>
+      <button
+        className="button-wrapper btnsx"
+        onClick={[Function]}
+      >
+        6
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="button-wrapper btnon"
+        onClick={[Function]}
+      >
+        1
+      </button>
+      <button
+        className="button-wrapper btntw"
+        onClick={[Function]}
+      >
+        2
+      </button>
+      <button
+        className="button-wrapper btnthr"
+        onClick={[Function]}
+      >
+        3
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="button-wrapper clearBtn"
+        onClick={[Function]}
+      />
+      <button
+        className="button-wrapper btnzr"
+        onClick={[Function]}
+      >
+        0
+      </button>
+      <button
+        className="button-wrapper confirmBtn"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshots PinCode snapshot 1`] = `
+<Fragment>
+  <div
+    className="behind"
+  >
+    Please enter your PIN to continue.
+  </div>
+  <div
+    className="app"
+  >
+    <div
+      className="calc-wrapper "
+    >
+      <Input
+        fill="transparent"
+        input=""
+        len={0}
+        type="password"
+      />
+      <div
+        className="row"
+      />
+      <NumPad
+        disp={
+          Object {
+            "total": "",
+          }
+        }
+        leftAction={[Function]}
+        leftName={<Memo />}
+        rightAction={[Function]}
+        rightName={<Memo />}
+        setDisp={[Function]}
+      />
+    </div>
+  </div>
+</Fragment>
+`;
+
+exports[`snapshots SplashScreen snapshot 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="behind"
+  >
+    Please insert your card to continue.
+  </div>
+  <div
+    className="cardSlot"
+  />
+  <div
+    className="cardDiv"
+  >
+    <WithStyles(ForwardRef(Collapse))
+      direction="down"
+      in={true}
+      mountOnEnter={true}
+      unmountOnExit={true}
+    >
+      <div>
+        <button
+          className="cardBtn"
+          onClick={[Function]}
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  576,
+                  512,
+                  Array [],
+                  "f09d",
+                  "M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z",
+                ],
+                "iconName": "credit-card",
+                "prefix": "fas",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        </button>
+      </div>
+    </WithStyles(ForwardRef(Collapse))>
+  </div>
+</div>
+`;

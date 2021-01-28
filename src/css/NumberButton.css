@@ -1,0 +1,33 @@
+#dashboardWrap .button-wrapper{
+  height: 8vh;
+  width: 8vh;
+}
+
+.button-wrapper {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 10vh;
+  width: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 1.4em;
+  background-color: transparent;
+  color: #ffffff;
+  flex: 1;
+  border:white;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 100%;
+  margin: 0.5em;
+}
+.button-wrapper:hover {
+  
+ 
+  background-color: #e0e1e6;
+  color: #888888;
+  cursor:pointer;
+
+}
